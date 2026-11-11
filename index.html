@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1675df">
+<meta name="description" content="PawPaw - Phụ kiện và vật dụng cá nhân hóa dành cho thú cưng.">
+<title>PawPaw – Love Your Pet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement">🐾 PAWPAW – Trao yêu thương, lưu giữ dấu chân yêu thương <span>Miễn phí vận chuyển cho đơn từ 499.000đ</span></div>
+<header class="header">
+  <a class="brand" href="#" data-page="home"><span class="logo">🐾</span><span><b>PawPaw</b><small>LOVE YOUR PET</small></span></a>
+  <nav><a href="#" data-page="home">Trang chủ</a><a href="#" data-page="shop">Sản phẩm</a><a href="#" data-page="about">Về PawPaw</a><a href="#" data-page="contact">Liên hệ</a></nav>
+  <div class="head-actions"><button class="icon-btn" id="chat-open" aria-label="Chat">💬</button><button class="icon-btn cart-btn" id="cart-open" aria-label="Giỏ hàng">🛒 <i id="cart-count">0</i></button><button class="menu-btn" id="menu-btn">☰</button></div>
+</header>
+<nav class="mobile-nav" id="mobile-nav"><a href="#" data-page="home">Trang chủ</a><a href="#" data-page="shop">Sản phẩm</a><a href="#" data-page="about">Về PawPaw</a><a href="#" data-page="contact">Liên hệ</a></nav>
+<main>
+<section class="page active" id="page-home">
+  <div class="hero wrap">
+    <div class="hero-copy"><span class="eyebrow">🐶 PET LIFESTYLE COLLECTION</span><h1>Yêu thương <em>từng dấu chân</em></h1><p>Khám phá phụ kiện xinh xắn, cá nhân hóa theo tên riêng dành cho những người bạn bốn chân đặc biệt của bạn.</p><div class="hero-actions"><button class="primary" data-page="shop">Khám phá ngay <b>→</b></button><button class="secondary" data-page="about">Câu chuyện PawPaw</button></div><div class="hero-points"><span>✦ Thiết kế cá nhân hóa</span><span>✦ Yêu thương từng chi tiết</span></div></div>
+    <div class="hero-image"><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1100&q=85" alt="Chú chó đáng yêu"></div>
+  </div>
+  <section class="wrap section"><div class="section-heading center"><span class="eyebrow">SHOP BY CATEGORY</span><h2>Khám phá bộ sưu tập</h2><p>Những món đồ nhỏ xinh dành riêng cho boss nhà bạn</p></div><div class="categories">
+    <button class="category" data-category="Vòng cổ"><span>🐕</span><b>Vòng cổ</b><small>Phong cách riêng</small></button>
+    <button class="category" data-category="Dây dắt"><span>🦮</span><b>Dây dắt</b><small>Cùng boss dạo phố</small></button>
+    <button class="category" data-category="Thẻ tên"><span>🏷️</span><b>Thẻ tên</b><small>Dấu ấn cá nhân</small></button>
+    <button class="category" data-category="Phụ kiện"><span>🎀</span><b>Phụ kiện</b><small>Xinh xắn mỗi ngày</small></button>
+  </div></section>
+  <section class="soft-bg"><div class="wrap section"><div class="section-heading split"><div><span class="eyebrow">PAWPAW FAVORITES</span><h2>Sản phẩm nổi bật</h2></div><button class="text-link" data-page="shop">Xem tất cả →</button></div><div class="products-grid" id="featured-products"></div></div></section>
+  <section class="wrap section"><div class="personal-banner"><div><span class="eyebrow light">PERSONALIZED FOR YOUR PET</span><h2>Một chiếc tên – Một câu chuyện yêu thương</h2><p>Cá nhân hóa phụ kiện với tên riêng của boss, tạo nên món đồ mang dấu ấn đặc biệt.</p><button class="white-btn" data-page="shop">Chọn sản phẩm ngay</button></div><div class="paw-art">🐾💙</div></div></section>
+</section>
+<section class="page wrap section" id="page-shop"><div class="section-heading"><span class="eyebrow">PAWPAW COLLECTION</span><h1>Tất cả sản phẩm</h1><p>Tìm món phụ kiện phù hợp với người bạn nhỏ của bạn.</p></div><div class="shop-tools"><input id="search" type="search" placeholder="Tìm kiếm sản phẩm..."><select id="sort"><option value="default">Sắp xếp mặc định</option><option value="asc">Giá thấp đến cao</option><option value="desc">Giá cao đến thấp</option></select></div><div class="filters" id="filters"></div><p class="result-count" id="result-count"></p><div class="products-grid" id="shop-products"></div></section>
+<section class="page wrap section" id="page-detail"></section>
+<section class="page wrap section" id="page-cart"><button class="text-link back" data-page="shop">← Tiếp tục mua sắm</button><div class="section-heading"><h1>Giỏ hàng của bạn</h1></div><div id="cart-content"></div></section>
+<section class="page wrap section" id="page-checkout"><div class="section-heading"><h1>Thanh toán</h1><p>Vui lòng kiểm tra thông tin đơn hàng trước khi xác nhận.</p></div><div id="checkout-content"></div></section>
+<section class="page wrap section" id="page-about"><div class="about-panel"><span class="eyebrow">OUR STORY</span><h1>PawPaw – Yêu thương từ những điều nhỏ nhất</h1><p>PawPaw là thương hiệu phụ kiện và vật dụng dành cho thú cưng, hướng tới việc mang đến những sản phẩm tiện dụng, đáng yêu và có dấu ấn cá nhân. Chúng tôi tin rằng mỗi thú cưng đều đặc biệt và xứng đáng được chăm sóc bằng sự quan tâm chân thành.</p><div class="values"><article><span>💙</span><h3>Cá nhân hóa</h3><p>Gửi gắm tên riêng và cá tính của từng boss.</p></article><article><span>🐾</span><h3>Chú trọng trải nghiệm</h3><p>Quan tâm từ lựa chọn sản phẩm đến quá trình mua sắm.</p></article><article><span>🎁</span><h3>Trao yêu thương</h3><p>Biến phụ kiện thành món quà ý nghĩa cho thú cưng.</p></article></div></div></section>
+<section class="page wrap section" id="page-contact"><div class="section-heading"><span class="eyebrow">CONTACT US</span><h1>Kết nối với PawPaw</h1><p>Chúng mình luôn sẵn sàng lắng nghe bạn!</p></div><div class="contact-grid"><div class="contact-info"><article>📧 <b>Email</b><p>support@pawpaw.vn</p></article><article>💬 <b>Hỗ trợ khách hàng</b><p>Chat trực tiếp với PawPaw</p><button class="primary" id="contact-chat">Bắt đầu trò chuyện</button></article><article>🐾 <b>Website</b><p>PawPaw – Love your pet</p></article></div><form id="contact-form" class="form-card"><label>Họ và tên<input required placeholder="Nhập họ tên"></label><label>Email<input required type="email" placeholder="email@example.com"></label><label>Số điện thoại<input type="tel" placeholder="Số điện thoại"></label><label>Nội dung<textarea required rows="4" placeholder="Bạn cần PawPaw hỗ trợ điều gì?"></textarea></label><button class="primary">Gửi tin nhắn</button><p class="form-note" id="contact-note"></p></form></div></section>
+</main>
+<footer class="footer"><div class="footer-inner wrap"><div><a class="brand footer-brand" href="#" data-page="home"><span class="logo">🐾</span><span><b>PawPaw</b><small>LOVE YOUR PET</small></span></a><p>Love your pet. Celebrate every little paw print.</p></div><div><b>Khám phá</b><a href="#" data-page="shop">Sản phẩm</a><a href="#" data-page="about">Về PawPaw</a><a href="#" data-page="contact">Liên hệ</a></div><div><b>Hỗ trợ</b><span>Hướng dẫn mua hàng</span><span>Chính sách giao hàng</span><span>Chính sách đổi trả</span></div><div><b>Theo dõi PawPaw</b><p>Cùng chia sẻ khoảnh khắc đáng yêu của boss!</p></div></div><div class="copyright">© 2026 PawPaw. All rights reserved.</div></footer>
+<button class="floating-chat" id="floating-chat" aria-label="Chat với PawPaw">💬</button>
+<div class="modal-backdrop hidden" id="modal"><div class="modal"><div class="modal-head"><b id="modal-title">PawPaw</b><button id="modal-close">✕</button></div><div id="modal-body"></div></div></div>
+<script src="app.js"></script>
+</body></html>
